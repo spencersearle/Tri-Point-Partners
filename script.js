@@ -45,13 +45,6 @@ if (contactForm) {
   });
 }
 
-// ── Podcast play button placeholder ────────
-document.querySelectorAll('.ep-play').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const episodeTitle = btn.closest('.episode-item')?.querySelector('h4')?.textContent;
-    alert(`Podcast streaming links coming soon!\n\nEpisode: "${episodeTitle}"\n\nListen on Spotify, Apple Podcasts, or your favorite platform.`);
-  });
-});
 
 // ── Scroll reveal animation ────────────────
 const observerOptions = {
