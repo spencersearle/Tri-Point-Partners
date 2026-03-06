@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Tri-Point Partners</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/Trr-Point%20Partners%20Mountain%20Designs%20(1).png" alt="Tri-Point Partners Logo" />
+      <span class="nav-logo-text">Tri-Point Partners</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bios.html">Our Team</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="courses.html">Mini Courses</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Let's Start a Conversation</h1>
+    <p>Whether you're looking to bring us to your school, book a mini course session, or just explore what a partnership might look like — we'd love to hear from you.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="section-inner">
+      <div class="contact-wrapper">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <h3>Bring Tri-Point Partners to Your School or District</h3>
+          <p>
+            We work with schools, campuses, and districts of all sizes to provide meaningful consulting, professional development, and coaching. Every engagement begins with listening — we want to understand your community, your challenges, and your vision before we make a single recommendation.
+          </p>
+
+          <div class="contact-item">
+            <h4>Educational Consulting</h4>
+            <p>On-site visits, strategic planning sessions, data walkthroughs, and campus-wide consulting engagements tailored to your specific context.</p>
+          </div>
+
+          <div class="contact-item">
+            <h4>Professional Development</h4>
+            <p>Full-day, half-day, or after-school PD sessions designed around your staff's needs and your campus goals. We bring content that sticks.</p>
+          </div>
+
+          <div class="contact-item">
+            <h4>Mini Course Coaching Sessions</h4>
+            <p>Individual or small-group coaching sessions with a Tri-Point Partner. Available virtually or in person, on your schedule.</p>
+          </div>
+
+          <div class="contact-item">
+            <h4>Podcast Topic Suggestions</h4>
+            <p>Want us to tackle a specific topic on the podcast? Let us know what educators in your building are wrestling with.</p>
+          </div>
+
+          <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #6b7280;">
+            We typically respond within 1–2 business days. We look forward to connecting with you.
+          </p>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jane.smith@yourschool.edu" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label for="role">Your Role *</label>
+                <select id="role" name="role" required>
+                  <option value="" disabled selected>Select your role</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="instructional-coach">Instructional Coach</option>
+                  <option value="assistant-principal">Assistant Principal</option>
+                  <option value="principal">Principal</option>
+                  <option value="district-leader">District Leader</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="school">School or Organization *</label>
+              <input type="text" id="school" name="school" placeholder="Lincoln Elementary School" required />
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I'm interested in... *</label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="consulting">Educational Consulting (Campus / District Visit)</option>
+                <option value="pd">Professional Development Session</option>
+                <option value="mini-course-ryan">Mini Course — Coaching with Ryan Puckett</option>
+                <option value="mini-course-jacinda">Mini Course — Coaching with Jacinda Waldrip</option>
+                <option value="mini-course-other">Mini Course — Coaching with [Third Partner]</option>
+                <option value="podcast">Podcast Topic Suggestion</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your School and What You're Looking For *</label>
+              <textarea id="message" name="message" placeholder="Share a little about your school, your current challenges, and what you're hoping to accomplish through this partnership..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-blue" style="width: 100%; justify-content: center; font-size: 1rem; padding: 0.95rem;">
+              Send Message
+            </button>
+          </form>
+
+          <div id="form-success" class="form-success">
+            Thank you for reaching out! A member of the Tri-Point Partners team will be in touch with you within 1–2 business days.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens Next -->
+  <section class="bg-light">
+    <div class="section-inner">
+      <div class="section-header text-center" style="text-align: center;">
+        <span class="section-label">What to Expect</span>
+        <h2 class="section-title">After You Reach Out</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Here's what you can expect once you submit your message.</p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="card" style="text-align: center;">
+          <div style="width: 44px; height: 44px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: white; font-weight: 700; font-size: 1.1rem;">1</div>
+          <h3>Quick Response</h3>
+          <p>We'll respond within 1–2 business days to acknowledge your inquiry and let you know who will be following up.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="width: 44px; height: 44px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: white; font-weight: 700; font-size: 1.1rem;">2</div>
+          <h3>Discovery Call</h3>
+          <p>A Tri-Point Partner will schedule a brief discovery call to better understand your school and what you're hoping to accomplish.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="width: 44px; height: 44px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: white; font-weight: 700; font-size: 1.1rem;">3</div>
+          <h3>Custom Proposal</h3>
+          <p>We'll put together a customized proposal that outlines how we'd structure the engagement to best meet your needs and goals.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div style="width: 44px; height: 44px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: white; font-weight: 700; font-size: 1.1rem;">4</div>
+          <h3>Let's Get to Work</h3>
+          <p>Once we're aligned, we'll schedule your sessions and get to work supporting your school and your people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="images/Trr-Point%20Partners%20Mountain%20Designs%20(1).png" alt="Tri-Point Partners" />
+        <p>Educational consulting rooted in real classroom experience. We help schools grow from the inside out.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bios.html">Our Team</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="courses.html">Mini Courses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="contact.html">Educational Consulting</a></li>
+          <li><a href="contact.html">Professional Development</a></li>
+          <li><a href="courses.html">Mini Courses</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Tri-Point Partners. All rights reserved.</span>
+      <span>Educational Consulting &amp; Professional Development</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
