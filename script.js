@@ -24,24 +24,37 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
-// ── Contact Form ───────────────────────────
+// ── Contact Form (Formspree) ───────────────
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const btn = contactForm.querySelector('button[type="submit"]');
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Simulate form submission
-    setTimeout(() => {
-      contactForm.style.display = 'none';
-      const success = document.getElementById('form-success');
-      if (success) {
-        success.style.display = 'block';
+    try {
+      const response = await fetch('https://formspree.io/f/meerezye', {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        contactForm.style.display = 'none';
+        const success = document.getElementById('form-success');
+        if (success) success.style.display = 'block';
+      } else {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or email us directly.');
       }
-    }, 1000);
+    } catch (err) {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      alert('Something went wrong. Please try again or email us directly.');
+    }
   });
 }
 
